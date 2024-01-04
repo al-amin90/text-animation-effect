@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;600;800&family=Poppins:wght@300;400;600;700&family=Quicksand:wght@300;400;500;600;700&family=Urbanist:wght@400;500;600;700;800&display=swap');
+
+        body {
+            display: grid;
+            place-items: center;
+            height: 100vh;
+            background-color: rgb(29, 28, 28);
+        }
+
+        main>h1 {
+            color: white;
+            font-size: 80px;
+            font-family: 'Urbanist', sans-serif;
+            position: relative;
+
+            &::before {
+                content: "Tamim.Ullah...";
+                position: absolute;
+                color: rgb(242, 80, 39);
+                border-right: 3px solid rgb(242, 80, 39);
+                width: 90%;
+                overflow: hidden;
+                animation: effect 1s linear infinite alternate;
+            }
+        }
+
+        @keyframes effect {
+            0% {
+                width: 0%;
+            }
+
+            100% {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <h1>Tamim.Ullah...</h1>
+    </main>
+</body>
+
+</html>
